@@ -1,0 +1,23 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "cypress training demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --spec 'cypress/e2e/tests/**/*,cy.js' --headed --browser chrome",
+    "firefox": "npx cypress run --spec 'cypress/e2e/tests/**/*,cy.js' --headed --browser firefox",
+    "record": "npx cypress run --spec 'cypress/e2e/tests/**/*,cy.js' --record --key a6e0be7f-c5b9-4d17-8de2-0eac72fd2852"
+  },
+  "keywords": [
+    "cypress",
+    "demo",
+    "training"
+  ],
+  "author": "Ben Bilgili",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/grep": "^4.0.1",
+    "cypress": "^13.4.0",
+    "playwright-webkit": "^1.39.0"
+  }
+}
